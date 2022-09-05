@@ -1,0 +1,101 @@
+.App {
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.GeneratePassword {
+  background-color: var(--box-color-00);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.title {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 600;
+  text-align: center;
+  font-family: Khand, sans-serif;
+  margin-bottom: 1rem;
+  text-transform: up;
+}
+.password {
+  margin-bottom: 10px;
+  position: relative;
+  .generatedPassword {
+    padding: 3px 10px;
+    width: 336px;
+    line-height: 41px;
+    height: 41px;
+    font-size: 25px;
+    border-radius: 5px;
+    color: var(--text-color-00);
+    background-color: var(--background-color);
+  }
+  .copy-btn {
+    position: absolute;
+    right: 10px;
+    bottom: 50%;
+    transform: translateY(50%);
+    cursor: pointer;
+    font-size: 25px;
+    &:hover {
+      font-size: 27px;
+    }
+  }
+  .copied {
+    position: absolute;
+    right: 10px;
+    bottom: 50%;
+    transform: translateY(50%);
+    cursor: not-allowed;
+    font-size: 25px;
+    &:hover {
+      font-size: 27px;
+    }
+  }
+}
+.error {
+  height: 16px;
+  color: var(--danger-color);
+  text-align: center;
+  margin-bottom: 10px;
+}
+.closeError {
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s 0.5s, opacity 0.5s linear;
+}
+.showError {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s linear;
+}
+.property {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 25px;
+  input {
+    width: 30px;
+  }
+}
+.generate-btn {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  button {
+    background-color: transparent;
+    color: var(--text-color-00);
+    font-size: 18px;
+    padding: 8px 10px;
+    border: 0.5px solid var(--text-color-00);
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover{
+      font-size: 20px;
+    }
+  }
+  .notAllow {
+    cursor: not-allowed;
+  }
+}
