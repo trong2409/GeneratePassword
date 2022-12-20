@@ -2,7 +2,7 @@
 
 This is the first app I made while learning React
 
-You can find my demo [here]([http://localhost:3000](https://trong2409.github.io/GeneratePassword/)
+You can find my demo [here](https://trong2409.github.io/GeneratePassword/)
 
 
 # Getting Started with Create React App
